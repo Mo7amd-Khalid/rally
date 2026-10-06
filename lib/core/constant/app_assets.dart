@@ -2,7 +2,7 @@ abstract class AppImages {
   static const String _baseAppPath = 'assets/images/';
   static const String setupImageLightMode = '${_baseAppPath}setup.png';
   static const String setupImageDarkMode = '${_baseAppPath}dark_setup.png';
-  static const String circleLogo = '${_baseAppPath}circle_logo.png';
+  static const String circleLogo = '${_baseAppPath}logo.png';
   static const String horizontalLogo = '${_baseAppPath}horizontal logo.png';
   static const String userImage = '${_baseAppPath}user_image.png';
 
