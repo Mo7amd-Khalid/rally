@@ -14,7 +14,7 @@ void main() async{
   );
 
   await configureDependencies();
-  SharedPreferences preferences = getIt();
+  //SharedPreferences preferences = getIt();
 
   runApp(const MyApp());
 }
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       locale: Locale("en"),
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       onGenerateRoute: AppRouter.generateRoute,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
