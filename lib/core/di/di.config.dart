@@ -31,6 +31,12 @@ import '../../domain/repository/auth_repository.dart' as _i614;
 import '../../domain/repository/evently_repo.dart' as _i596;
 import '../../domain/use_case/auth_use_case.dart' as _i185;
 import '../../domain/use_case/use_case.dart' as _i719;
+import '../../presentation/forget_password/cubit/forget_password_cubit.dart'
+    as _i671;
+import '../../presentation/login/cubit/login_cubit.dart' as _i101;
+import '../../presentation/onboarding/cubit/onboarding_cubit.dart' as _i657;
+import '../../presentation/register/cubit/register_cubit.dart' as _i849;
+import '../../presentation/setup/cubit/setup_cubit.dart' as _i536;
 import 'provide_firebase.dart' as _i743;
 import 'provide_sharedPreferences.dart' as _i1041;
 
@@ -84,6 +90,21 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i185.AuthUseCase>(
       () => _i185.AuthUseCase(gh<_i614.AuthRepository>()),
+    );
+    gh.factory<_i101.LoginCubit>(
+      () => _i101.LoginCubit(gh<_i185.AuthUseCase>()),
+    );
+    gh.factory<_i657.OnboardingCubit>(
+      () => _i657.OnboardingCubit(gh<_i719.EventlyUseCase>()),
+    );
+    gh.singleton<_i536.SetupCubit>(
+      () => _i536.SetupCubit(gh<_i719.EventlyUseCase>()),
+    );
+    gh.factory<_i671.ForgetPasswordCubit>(
+      () => _i671.ForgetPasswordCubit(gh<_i185.AuthUseCase>()),
+    );
+    gh.factory<_i849.RegisterCubit>(
+      () => _i849.RegisterCubit(gh<_i185.AuthUseCase>()),
     );
     return this;
   }
