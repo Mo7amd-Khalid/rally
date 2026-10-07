@@ -36,9 +36,9 @@ A new Flutter project that enable you to make all authentication process (login,
 
 ### Onboarding Screen
 <p align="center">
-  <img src="readme_pic/onboarding_1.jpg" width="250" height="500" />
-  <img src="readme_pic/onboarding_2.jpg" width="250" height="500" />
-  <img src="readme_pic/onboarding_3.jpg" width="250" height="500" />
+  <img src="readme_pic/onboarding 1.jpg" width="250" height="500" />
+  <img src="readme_pic/onboarding 2.jpg" width="250" height="500" />
+  <img src="readme_pic/onboarding 3.jpg" width="250" height="500" />
 </p>
 
 ### Authentication
