@@ -7,8 +7,8 @@ import 'package:rally/data/models/event_dm.dart';
 import 'package:rally/data/network/results.dart';
 import 'package:rally/domain/repository/evently_repo.dart';
 
-@Injectable(as: EventlyRepository)
-class RepoImpl implements EventlyRepository {
+@Injectable(as: RallyRepository)
+class RepoImpl implements RallyRepository {
   final LocalDatasource _localDatasource;
   final FirestoreRemoteDatasource _remoteDatasource;
 

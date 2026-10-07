@@ -11,7 +11,7 @@ import 'package:rally/presentation/setup/cubit/setup_state.dart';
 class SetupCubit extends BaseCubit<SetupState, SetupAction, SetupNavigation>{
   SetupCubit(this._useCase) : super(SetupState());
 
-  final EventlyUseCase _useCase;
+  final RallyUseCase _useCase;
 
   @override
   Future<void> doAction(SetupAction action) async{

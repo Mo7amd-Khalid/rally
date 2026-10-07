@@ -7,10 +7,10 @@ import 'package:rally/data/network/results.dart';
 import 'package:rally/domain/repository/evently_repo.dart';
 
 @injectable
-class EventlyUseCase {
+class RallyUseCase {
 
-  final EventlyRepository _repoImpl;
-  EventlyUseCase(this._repoImpl);
+  final RallyRepository _repoImpl;
+  RallyUseCase(this._repoImpl);
 
   Future<void> saveDataInSharedPreferences(String key, dynamic value) async{
     _repoImpl.setValueInSharedPreferences(key, value);
