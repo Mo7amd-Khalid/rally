@@ -55,31 +55,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class MyApp extends StatelessWidget {
-//   MyApp({super.key, required this.onboardingStatus, required this.loginStatus});
-//   final SetupCubit cubit = getIt();
-//   final bool? onboardingStatus;
-//   final bool? loginStatus;
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       localizationsDelegates: AppLocalizations.localizationsDelegates,
-//       supportedLocales: AppLocalizations.supportedLocales,
-//       locale: Locale("en"),
-//       theme: AppTheme.lightTheme,
-//       darkTheme: AppTheme.darkTheme,
-//       themeMode: ThemeMode.dark,
-//       onGenerateRoute: AppRouter.generateRoute,
-//       initialRoute: initialRoute(
-//         onboardingStatus ?? false,
-//         loginStatus ?? false,
-//       ),
-//     );
-//   }
-// }
-
 String initialRoute(bool onboardingStatus, bool loginStatus) {
   if (onboardingStatus == false) {
     return Routes.setup;
