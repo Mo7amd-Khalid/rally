@@ -1,13 +1,13 @@
 flutter_native_splash:
   color: "#F2FEFF"
-  image: assets/images/circle_logo_android12.png
+  image: assets/images/logo.png
   color_dark: "#F2FEFF"
-  image_dark: assets/images/circle_logo_android12.png
+  image_dark: assets/images/logo.png
 
   android_12:
-    image: assets/images/circle_logo_android12.png
+    image: assets/images/logo.png
     color: "#F2FEFF"
-    image_dark: assets/images/circle_logo_android12.png
+    image_dark: assets/images/logo.png
     color_dark: "#F2FEFF"
   android: true
   ios: true
@@ -17,7 +17,7 @@ flutter_native_splash:
   color_dark_ios: "#F2FEFF"
   color_web: "#F2FEFF"
   color_dark_web: "#F2FEFF"
-  image_android: assets/images/circle_logo_android12.png
-  image_dark_android: assets/images/circle_logo_android12.png
-  image_ios: assets/images/circle_logo.png
-  image_dark_ios: assets/images/circle_logo.png
+  image_android: assets/images/logo.png
+  image_dark_android: assets/images/logo.png
+  image_ios: assets/images/logo.png
+  image_dark_ios: assets/images/logo.png

@@ -1,0 +1,18 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:rally/data/models/event_dm.dart';
+import 'package:rally/data/network/results.dart';
+
+abstract interface class FirestoreRemoteDatasource {
+
+  Future<Results<void>> storeUserDataToUserCollection(User user);
+  Future<Results<QuerySnapshot<Map<String, dynamic>>>> getUsers();
+  Future<Results<void>> addEvent(EventDM event, BuildContext context);
+  Future<Results<void>> deleteEvent(String eventID, BuildContext context);
+  Future<Results<List<EventDM>>> getEvents(int categoryID);
+  Future<Results<void>> updateEvent(EventDM event, BuildContext context);
+  Future<Results<List<EventDM>>> updateFavUserList(String userID, EventDM event);
+  Results<Stream<QuerySnapshot<EventDM>>> getMyFavList(String userID);
+}
