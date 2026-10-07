@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:rally/data/models/event_dm.dart';
 import 'package:rally/data/network/results.dart';
 
-abstract interface class EventlyRepository{
+abstract interface class RallyRepository{
   Future<Results<void>> setValueInSharedPreferences(String key, dynamic value);
   Future<Results<dynamic>> getValueFromSharedPreferences(String key);
   Future<Results<void>> addEvent(EventDM event, BuildContext context);

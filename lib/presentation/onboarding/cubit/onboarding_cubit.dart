@@ -9,7 +9,7 @@ import 'package:rally/presentation/onboarding/cubit/onboarding_state.dart';
 class OnboardingCubit extends BaseCubit<OnboardingState, OnboardingActions, OnboardingNavigation>{
   OnboardingCubit(this._useCase) : super(OnboardingState());
 
-  final EventlyUseCase _useCase;
+  final RallyUseCase _useCase;
   @override
   Future<void> doAction(OnboardingActions action) async{
     switch (action) {
