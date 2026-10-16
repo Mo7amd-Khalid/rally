@@ -121,6 +121,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               dotHeight: 12,
                               dotWidth: 12,
                               dotColor: Theme.of(context).colorScheme.secondary,
+                              activeDotColor: Theme.of(context).colorScheme.primary
                             ),
                           ),
                           Spacer(),
